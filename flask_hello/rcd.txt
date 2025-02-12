@@ -1,4 +1,6 @@
 当前demo启动命令
     1. flask --app ./app/py run 或者 flask run (启动文件为app.py可以省略--app)
     2. flask run --host=0.0.0.0 --port=10010 (指定端口运行，外部可访问)
+        另一种简写：
+        flask --app ./xxx.py run -h 0.0.0.0 -p 8080
     3. flask run --debug (打开调试模式，注意打开调试器会在浏览器端报错的时候提供python shell交互窗口，不要在生产环境使用该模式)

@@ -24,7 +24,7 @@ def upload_file():
         # todo:文件合理性验证
         ...
 
-        file = request.files.get("file", None)
+        file = request.files.get("file", None)  # 这里的nm和html中上传文件的地方的name一致
         if file:
             try:
                 origin_filename = secure_filename(file.filename)

@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07d6c0c1-27a4-49d0-8fc5-f7db1e65ecc2" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_hello/templates/upload_file.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_hello/upload_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_hello/rcd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/flask_hello/rcd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_hello/upload_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_hello/upload_file.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738931500940</updated>
       <workItem from="1738931501980" duration="167000" />
-      <workItem from="1739366955942" duration="4600000" />
+      <workItem from="1739366955942" duration="4993000" />
     </task>
     <servers />
   </component>
