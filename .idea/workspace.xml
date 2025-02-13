@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07d6c0c1-27a4-49d0-8fc5-f7db1e65ecc2" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_hello/base_expand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_hello/templates/401_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_hello/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_hello/rcd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/flask_hello/rcd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_hello/base_expand.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_hello/base_expand.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/CODE_AND_CODETOOLS/CODE/SOURCE_TREE/flask_demo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CODE_AND_CODETOOLS/CODE/SOURCE_TREE/flask_demo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="upload_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="flask_demo" />
@@ -91,7 +90,8 @@
       <option name="presentableId" value="Default" />
       <updated>1738931500940</updated>
       <workItem from="1738931501980" duration="167000" />
-      <workItem from="1739366955942" duration="7304000" />
+      <workItem from="1739366955942" duration="7337000" />
+      <workItem from="1739450801593" duration="4533000" />
     </task>
     <servers />
   </component>
