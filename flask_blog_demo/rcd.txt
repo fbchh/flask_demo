@@ -1,0 +1,6 @@
+记点东西
+
+首次启动创建数据库（路径根据实际情况修改）
+    sqlite3 ./flask_blog_demo.db < schema.sql
+项目启动命令：
+    flask run -h 127.0.0.1 -p 10010 --reload
