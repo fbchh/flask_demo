@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, render_template, request, redirect, url_for, session, abort, g
+from flask import Flask, render_template, request, redirect, url_for, session, abort, g, flash
 
 # 基础配置
 DATABASE = r'D:\CODE_AND_CODETOOLS\CODE\SOURCE_TREE\flask_demo\flask_blog_demo\flask_blog_demo.db'
@@ -7,15 +7,64 @@ ENV = 'development'
 DEBUG = True
 SECRET_KEY = 'axasdafhaskd///]'
 USERNAME = 'admin'
-PASSWORD = 'default'
+PASSWORD = '123456'
 
 app = Flask(__name__)
 app.config.from_object(__name__)  # 此方法获取指定文件（这里是当前文件）中全部大写的变量作为配置
 
 
 @app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
+def home():
+    """
+    根目录 获取当前系统中所有的博客
+    """
+    cur_db_rcds = g.conn.execute("select title, text from entries order by id desc")
+    cur_db_rcds_dict = [dict(title=e[0], text=e[1]) for e in cur_db_rcds.fetchall()]
+    return render_template("home.html", entries=cur_db_rcds_dict)
+
+
+@app.route("/add", methods=["POST"])
+def add_blog():
+    """
+    添加博客
+    """
+    if not session.get("login"):
+        abort(401)
+    g.conn.execute('INSERT INTO entries (title, text) VALUES (?, ?)',
+                   [request.form.get('title'), request.form.get('text')])
+    g.conn.commit()
+    flash('New entry has been successfully posted')
+    return redirect(url_for('home'))
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    """
+    登录
+    """
+    error = None
+    if request.method == 'POST':
+        # 如果用户名与配置项不符
+        if request.form.get('username') != app.config.get('USERNAME'):
+            error = 'Invalid username'
+        # 如果密码与配置项不符
+        elif request.form.get('password') != app.config.get('PASSWORD'):
+            error = 'Invalid password'
+        else:
+            session['login'] = True
+            flash('You\'re logged in successfully!')
+            return redirect(url_for('home'))
+    return render_template('login.html', error=error)
+
+
+@app.route('/logout')
+def logout():
+    """
+    登出
+    """
+    session.pop('login', None)
+    flash('You have logged out successfully')
+    return redirect(url_for('home'))
 
 
 # 此装饰器的功能是，当任意视图函数执行时，预先执行这个装饰器下的所有函数
